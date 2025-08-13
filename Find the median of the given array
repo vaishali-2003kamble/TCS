@@ -1,0 +1,23 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+      int arr[]={2,4,1,3,5};
+      int n=arr.length;
+    Arrays.sort(arr);
+    double meadian=0.0;
+    
+      for(int i=0;i<n;i++)
+      {
+          if(n%2!=0)
+          {
+             meadian=arr[n/2];
+          }
+          else 
+          {
+               meadian=((arr[n/2]-1+arr[n/2])/2.0);
+          }
+         
+      }
+      System.out.println("median "+meadian);
+    }
+}
