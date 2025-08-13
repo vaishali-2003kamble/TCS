@@ -1,0 +1,28 @@
+class Main {
+    public static void main(String[] args) {
+       int arr[]={0,1,2,3,5};
+       
+       int left=0;
+       int right=arr.length-1;
+        System.out.println("Oroginal array");
+       for(int arr1:arr)
+       {
+           System.out.print(arr1+" ");
+       }
+       while(left<right)
+       {
+           int temp=arr[left];
+           arr[left]=arr[right];
+           arr[right]=temp;
+           left++;
+           right--;
+       }
+      
+       System.out.println("\nReversed Array :- ");
+       for(int nums:arr)
+       {
+           System.out.print(nums+" ");
+       }
+       
+    }
+}
