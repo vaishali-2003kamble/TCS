@@ -1,0 +1,16 @@
+
+
+class Main {
+    public static void main(String[] args) {
+  
+      int expoent=2;
+      int base=3;
+      int res=1;
+      for(int i=0;i<expoent;i++)
+      {
+          res=res*base;
+      }
+      System.out.println("power of the number is "+res);
+       
+    }
+}
