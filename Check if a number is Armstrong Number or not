@@ -1,0 +1,23 @@
+
+class Main {
+    public static void main(String[] args) {
+      int num=370;
+      int copy=num;
+      int rev=0;
+      while(num>0)
+      {
+          int rem=num%10;
+          rev=rev+(rem*rem*rem);
+          num=num/10;
+      }
+      if(rev==copy)
+      {
+          System.out.println("Armstrong number "+rev);
+      }
+      else
+      {
+          System.out.println(" Not Armstrong number "+rev);
+      }
+    }
+        
+}
