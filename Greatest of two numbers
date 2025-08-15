@@ -1,0 +1,16 @@
+
+
+class Main {
+    public static void main(String[] args) {
+       int n1=12;
+       int n2=13;
+       if(n1>n2)
+       {
+           System.out.println("Number one is greater than number two "+n1); 
+       }
+       else
+       {
+           System.out.println("Number one is smaller than number two "+n2); 
+       }
+    }
+}
