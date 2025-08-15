@@ -1,0 +1,32 @@
+
+class Main {
+    public static void main(String[] args) {
+    int num=145;
+    int sum=0;
+    int copy=num;
+    while(num>0)
+    {
+        int rem=num%10;
+        sum=sum+factorial(rem);
+        num=num/10;
+    }
+    if(sum==copy)
+    {
+         System.out.println("Strong number ");
+    }
+    else
+    {
+         System.out.println(" not Strong number ");
+    }
+   
+    }
+    public static int factorial(int num)
+    {
+        int fact=1;
+        for(int i=1;i<=num;i++)
+        {
+            fact=fact*i;
+        }
+        return fact;
+    }
+}
