@@ -1,0 +1,20 @@
+
+class Main {
+    public static void main(String[] args) {
+       int num=768521;
+       int rem;
+       int max=0;
+       int min=9;
+       while(num!=0)
+       {
+           rem=num%10;
+           max=Math.max(max,rem);
+           min=Math.min(min,rem);
+           num=num/10;
+           
+       }
+       System.out.println("Maximum number "+max);
+        System.out.println("Minimum number "+min);
+       
+    }
+}
