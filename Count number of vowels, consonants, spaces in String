@@ -1,0 +1,32 @@
+
+class Main {
+    public static void main(String[] args) {
+       String s="india won the cricket match";
+       int countvowel=0;
+       int countspace=0;
+       int countconstant=0;
+       int n=s.length();
+       for(int i=0;i<n;i++)
+       {
+           char ch=s.charAt(i);
+           if(ch==' ')
+           {
+               countspace++;
+           }
+          else if(ch>='a' && ch<='z')
+           {
+              if(ch=='a' || ch=='e'|| ch=='i' || ch=='o' || ch=='u')
+           {
+               countvowel++;
+           }
+           else
+           {
+               countconstant++;
+           }
+           }
+       }
+       System.out.println("white spaces :- "+countspace);
+         System.out.println("countvowel :- "+countvowel);
+           System.out.println("countconstant:- "+countconstant);
+    }
+}
