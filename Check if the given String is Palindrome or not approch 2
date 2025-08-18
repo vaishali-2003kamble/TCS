@@ -1,0 +1,25 @@
+
+class Main {
+    public static void main(String[] args) {
+       String s="madam";
+       char arr[]=s.toCharArray();
+       char ch[]=new char[arr.length];
+       int j=0;
+       for(int i=s.length()-1;i>=0;i--)
+       {
+           ch[j]=arr[i];
+           j++;
+       }
+  
+       String reverse=new String(ch);
+       if(s.equals(reverse))
+       {
+    	   System.out.println("is palindrome");
+       }
+       else
+       {
+    	   System.out.println("Not palindrome");
+       }
+       
+    }
+}
