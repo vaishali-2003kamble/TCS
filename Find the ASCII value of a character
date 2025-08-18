@@ -1,0 +1,8 @@
+
+class Main {
+    public static void main(String[] args) {
+       char ch='A';
+       int asccivalue=ch;
+       System.out.println(" ascill "+asccivalue);
+    }
+}
