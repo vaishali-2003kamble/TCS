@@ -1,0 +1,51 @@
+class Main {
+    public static void main(String[] args) {
+        int arr[] = {3, 2, 4, 1, 6};
+        int left = 0;
+        int right = arr.length - 1;
+
+        quicksort(arr, left, right);
+
+        System.out.println("Sorted array:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+
+    public static int partition(int arr[], int left, int right) {
+        int pivot = arr[left];
+        int lt = left + 1;
+        int rt = right;
+
+        while (true) {
+            while (lt <= right && arr[lt] <= pivot) {
+                lt++;
+            }
+            while (rt >= left && arr[rt] > pivot) {
+                rt--;
+            }
+            if (lt >= rt) {
+                break;
+            }
+            swap(arr, lt, rt);
+        }
+
+        // put pivot in correct place
+        swap(arr, left, rt);
+        return rt;
+    }
+
+    public static void swap(int arr[], int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    public static void quicksort(int arr[], int left, int right) {
+        if (left < right) {
+            int pivot = partition(arr, left, right);
+            quicksort(arr, left, pivot - 1);
+            quicksort(arr, pivot + 1, right);
+        }
+    }
+}
